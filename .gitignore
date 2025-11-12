@@ -1,0 +1,98 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+pnpm-lock.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+ENV/
+env/
+
+# Database & Data
+*.db
+*.sqlite
+*.sqlite3
+server/data/db.json
+server/data/*.json
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+
+# Build outputs
+dist/
+build/
+.vite/
+*.tsbuildinfo
+
+# Compiled cache
+model-service/app/unsloth_compiled_cache/
+
+# Model files and directories
+model/
+
+# Input/Output directories (if they contain temporary files)
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
+output/image.json
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Test coverage
+coverage/
+*.coverage
+.nyc_output/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Lock files (optional - uncomment if you want to ignore them)
+# package-lock.json
+# yarn.lock

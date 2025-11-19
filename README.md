@@ -4,15 +4,38 @@
 
 ## ✨ Tính năng chính
 
-- 🤖 **AI OCR**: Trích xuất tự động thông tin từ ảnh séc (số séc, người rút, người nhận, số tiền, ngày tháng, ngân hàng, v.v.)
+- 🤖 **AI OCR**: Trích xuất tự động thông tin từ ảnh séc với Qwen2-VL-2B Vision-Language Model
 - 🔐 **Phân quyền RBAC**: Hệ thống quản lý vai trò (Admin, Bank Staff, User)
 - 🔍 **Tìm kiếm nâng cao**: Lọc lịch sử theo trường thông tin cụ thể và thời gian
 - 💾 **Lưu trữ lịch sử**: Lưu tất cả kết quả OCR với metadata đầy đủ
 - 📊 **Dashboard quản lý**: Giao diện thân thiện cho admin và nhân viên ngân hàng
 - 🔒 **Xác thực JWT**: Bảo mật với JSON Web Token
+- ⚡ **GPU Acceleration**: Hỗ trợ CUDA để tăng tốc xử lý OCR
+
+---
+
+## 🚀 Khởi Động Nhanh (Quick Start)
+
+```bash
+cd /home/dunhiung/Desktop/APP/check-ocr-web
+
+# Khởi động tất cả services
+./start.sh
+
+# Kiểm tra trạng thái
+./status.sh
+
+# Dừng hệ thống
+./stop.sh
+```
+
+**📖 Chi tiết:** Xem [QUICK_START.md](QUICK_START.md) hoặc [STARTUP_GUIDE.md](STARTUP_GUIDE.md)
+
+---
 
 ## 📋 Mục lục
 
+- [Khởi động nhanh](#-khởi-động-nhanh-quick-start)
 - [Yêu cầu hệ thống](#yêu-cầu-hệ-thống)
 - [Cài đặt từng bước](#cài-đặt-từng-bước)
 - [Khởi động ứng dụng](#khởi-động-ứng-dụng)
@@ -299,6 +322,8 @@ pnpm dev
 4. Phân quyền (admin, bank_staff, user)
 
 ## 🔌 API Documentation
+
+For a complete, code-accurate reference of all backend endpoints and RBAC, see `docs/BACKEND_API.md`.
 
 ### Authentication
 
